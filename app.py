@@ -76,45 +76,127 @@ def moeda(valor):
 # TÍTULO
 # ============================================================
 
-st.title("🛒 Vendas em E-commerce no Brasil")
+st.markdown(
+    "# 🛒 Vendas em E-commerce no Brasil"
+)
 
 st.markdown(
-    "### Projeto G1 — Análise e Visualização de Dados"
+    "### 📊 Projeto G1 — Análise e Visualização de Dados"
+)
+
+st.caption(
+    "Dashboard analítico • Brasil • 2015–2024"
 )
 
 # ============================================================
 # IDENTIFICAÇÃO ACADÊMICA
 # ============================================================
 
-st.markdown(
-    """
-    <div style="
-        background-color: #0e1c2d;
-        border: 1px solid #20364d;
-        border-radius: 12px;
-        padding: 15px 20px;
-        margin: 10px 0 20px 0;
-    ">
-        <strong>📚 Disciplina:</strong>
-        Linguagens de Programação
-        <br>
+st.markdown("""
+<style>
 
-        <strong>👨‍🏫 Professor:</strong>
-        Alexandre Neves Louzada
-        <br>
+.info-card {
+    background: linear-gradient(135deg, #111c2b, #16263a);
+    border: 1px solid #29415a;
+    border-radius: 18px;
+    padding: 25px 30px;
+    margin: 20px 0 25px 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
 
-        <strong>👨‍🎓 Aluno:</strong>
-        Felipe Barbosa da Silva
+.info-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.info-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.info-label {
+    font-size: 12px;
+    color: #8da2b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.info-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.description-card {
+    background: rgba(30, 45, 62, 0.45);
+    border-left: 4px solid #4da3ff;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    color: #c8d4e3;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+
+<div class="info-card">
+
+    <div class="info-title">
+        🎓 Informações do Projeto
     </div>
-    """,
-    unsafe_allow_html=True
-)
 
-st.write(
-    "Aplicação analítica para investigar faturamento, produtos, "
-    "regiões, sazonalidade, canais de venda, logística e "
-    "comportamento dos clientes entre 2015 e 2024."
-)
+    <div class="info-grid">
+
+        <div class="info-item">
+            <div class="info-label">📚 Disciplina</div>
+            <div class="info-value">
+                Linguagens de Programação
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-label">👨‍🏫 Professor</div>
+            <div class="info-value">
+                Alexandre Neves Louzada
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-label">👨‍🎓 Aluno</div>
+            <div class="info-value">
+                Felipe Barbosa da Silva
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="description-card">
+    📊 <strong>Sobre o projeto:</strong>
+    Aplicação analítica desenvolvida para investigar
+    faturamento, produtos, regiões, sazonalidade, canais de venda,
+    logística e comportamento dos clientes no período de 2015 a 2024.
+</div>
+""", unsafe_allow_html=True)
 
 
 # ============================================================
