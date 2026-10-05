@@ -1,9 +1,11 @@
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 from database import carregar_fato
+
 
 # ============================================================
 # CONFIGURAÇÃO DA PÁGINA
@@ -24,6 +26,7 @@ sns.set_theme(style="whitegrid")
 
 @st.cache_data
 def carregar_dados():
+
     df = carregar_fato()
 
     # Garante que a coluna data seja reconhecida como datetime
@@ -61,6 +64,7 @@ df = carregar_dados()
 # ============================================================
 
 def moeda(valor):
+
     return (
         f"R$ {valor:,.2f}"
         .replace(",", "X")
@@ -77,6 +81,34 @@ st.title("🛒 Vendas em E-commerce no Brasil")
 
 st.markdown(
     "### Projeto G1 — Análise e Visualização de Dados"
+)
+
+# ============================================================
+# IDENTIFICAÇÃO ACADÊMICA
+# ============================================================
+
+st.markdown(
+    """
+    <div style="
+        background-color: #0e1c2d;
+        border: 1px solid #20364d;
+        border-radius: 12px;
+        padding: 15px 20px;
+        margin: 10px 0 20px 0;
+    ">
+        <strong>📚 Disciplina:</strong>
+        Linguagens de Programação
+        <br>
+
+        <strong>👨‍🏫 Professor:</strong>
+        Alexandre Neves Louzada
+        <br>
+
+        <strong>👨‍🎓 Aluno:</strong>
+        Felipe Barbosa da Silva
+    </div>
+    """,
+    unsafe_allow_html=True
 )
 
 st.write(
@@ -141,9 +173,11 @@ if not all([
     categorias,
     canais
 ]):
+
     st.warning(
         "Selecione pelo menos uma opção em cada filtro."
     )
+
     st.stop()
 
 
@@ -162,9 +196,11 @@ f = df[
 
 
 if f.empty:
+
     st.error(
         "Nenhum registro encontrado para os filtros selecionados."
     )
+
     st.stop()
 
 
@@ -315,12 +351,16 @@ with aba1:
     ax.legend()
 
     plt.xticks(rotation=30)
+
     plt.tight_layout()
 
     st.pyplot(fig)
 
     plt.close(fig)
 
+
+    # --------------------------------------------------------
+    # RESUMO ANUAL
     # --------------------------------------------------------
 
     anual = (
@@ -399,6 +439,9 @@ with aba2:
 
     plt.close(fig)
 
+
+    # --------------------------------------------------------
+    # REGIÕES
     # --------------------------------------------------------
 
     st.subheader(
@@ -436,6 +479,7 @@ with aba2:
     )
 
     ax.set_xlabel("R$")
+
     ax.set_ylabel("")
 
     plt.tight_layout()
@@ -492,6 +536,7 @@ with aba3:
     )
 
     ax.set_xlabel("R$")
+
     ax.set_ylabel("")
 
     plt.tight_layout()
@@ -500,6 +545,9 @@ with aba3:
 
     plt.close(fig)
 
+
+    # --------------------------------------------------------
+    # PRODUTOS
     # --------------------------------------------------------
 
     st.subheader(
@@ -530,6 +578,9 @@ with aba3:
         use_container_width=True
     )
 
+
+    # --------------------------------------------------------
+    # CATEGORIA MAIS LUCRATIVA
     # --------------------------------------------------------
 
     st.subheader(
@@ -603,6 +654,9 @@ with aba4:
 
     plt.close(fig)
 
+
+    # --------------------------------------------------------
+    # AVALIAÇÃO E PRAZO
     # --------------------------------------------------------
 
     col1, col2 = st.columns(2)
@@ -621,6 +675,9 @@ with aba4:
             f"{prazo:.1f} dias"
         )
 
+
+    # --------------------------------------------------------
+    # RELAÇÃO AVALIAÇÃO × VENDAS
     # --------------------------------------------------------
 
     st.subheader(
@@ -668,6 +725,9 @@ with aba4:
 
     plt.close(fig)
 
+
+    # --------------------------------------------------------
+    # ANÁLISE LOGÍSTICA
     # --------------------------------------------------------
 
     st.subheader(
@@ -728,6 +788,7 @@ with aba5:
     )
 
     ax.set_xlabel("Mês")
+
     ax.set_ylabel("Ano")
 
     plt.tight_layout()
@@ -736,6 +797,9 @@ with aba5:
 
     plt.close(fig)
 
+
+    # --------------------------------------------------------
+    # TABELA DINÂMICA
     # --------------------------------------------------------
 
     st.subheader(
@@ -755,6 +819,9 @@ with aba5:
         use_container_width=True
     )
 
+
+    # --------------------------------------------------------
+    # DADOS DETALHADOS
     # --------------------------------------------------------
 
     st.subheader(
@@ -769,6 +836,9 @@ with aba5:
         use_container_width=True
     )
 
+
+    # --------------------------------------------------------
+    # DOWNLOAD
     # --------------------------------------------------------
 
     st.download_button(
@@ -827,7 +897,39 @@ st.write(
 # RODAPÉ
 # ============================================================
 
-st.caption(
-    "Projeto acadêmico — Vendas em E-commerce no Brasil | "
-    "Python + Pandas + Matplotlib + Seaborn + Streamlit"
+st.divider()
+
+st.markdown(
+    """
+    <div style="
+        text-align: center;
+        color: #8295aa;
+        padding: 15px;
+    ">
+
+        <strong>Projeto acadêmico — G1</strong>
+        <br>
+
+        Vendas em E-commerce no Brasil
+        <br><br>
+
+        <strong>Disciplina:</strong>
+        Linguagens de Programação
+        <br>
+
+        <strong>Professor:</strong>
+        Alexandre Neves Louzada
+        <br>
+
+        <strong>Aluno:</strong>
+        Felipe Barbosa da Silva
+        <br><br>
+
+        Python + Pandas + NumPy + Matplotlib +
+        Seaborn + Streamlit + SQLAlchemy + SQLite
+
+    </div>
+    """,
+    unsafe_allow_html=True
 )
+```
