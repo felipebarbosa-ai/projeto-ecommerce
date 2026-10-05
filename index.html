@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E-commerce Brasil — Projeto G1</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:#07111f;color:#e5edf6;line-height:1.6}
+.wrap{max-width:1150px;margin:auto;padding:30px 20px}.hero{padding:75px 20px;text-align:center;background:radial-gradient(circle at top,#12365a,transparent 55%);border-radius:30px}
+.badge{display:inline-block;border:1px solid #31506d;padding:7px 14px;border-radius:30px;color:#67d5ff}
+h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.05;margin:20px 0}h2{margin-top:0}.muted{color:#9db0c5}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin:25px 0}
+.card{background:#0e1c2d;border:1px solid #20364d;border-radius:20px;padding:25px;box-shadow:0 15px 35px #0003}
+.kpi{font-size:2rem;font-weight:800;color:#67d5ff}.buttons a{display:inline-block;padding:12px 18px;margin:6px;border-radius:10px;background:#67d5ff;color:#062038;text-decoration:none;font-weight:700}
+li{margin:7px 0}footer{text-align:center;color:#8295aa;padding:40px}
+</style></head><body><div class="wrap">
+<section class="hero"><span class="badge">Projeto G1 • Python</span>
+<h1>📊 E-commerce Brasil</h1>
+<p class="muted">Análise de vendas, rentabilidade e experiência do cliente entre 2015 e 2024.</p>
+<div class="buttons"><a href="#" target="_blank">Dashboard Streamlit</a><a href="#" target="_blank">Repositório GitHub</a></div></section>
+
+<div class="grid">
+<div class="card"><div class="kpi">4.440</div><div>registros</div></div>
+<div class="card"><div class="kpi">R$ 85.13 mi</div><div>faturamento total</div></div>
+<div class="card"><div class="kpi">R$ 26.89 mi</div><div>lucro total</div></div>
+<div class="card"><div class="kpi">31.58%</div><div>margem total</div></div>
+</div>
+
+<div class="grid">
+<div class="card"><h2>🎯 Problema</h2><p>Como o desempenho comercial varia no tempo e entre regiões, canais, categorias e produtos? Quais indicadores ajudam a avaliar a experiência do cliente?</p></div>
+<div class="card"><h2>🧹 Tratamento</h2><ul><li>Conversão de datas</li><li>Verificação de ausentes e duplicidades</li><li>Padronização textual</li><li>Engenharia de atributos</li></ul></div>
+<div class="card"><h2>📌 KPIs</h2><ul><li>Faturamento</li><li>Lucro e margem</li><li>Unidades vendidas</li><li>Avaliação</li><li>Prazo de entrega</li></ul></div>
+</div>
+
+<div class="card"><h2>🔎 Principais descobertas</h2>
+<ul><li>Região líder: <strong>Sudeste</strong></li><li>Categoria líder: <strong>Beleza</strong></li><li>Canal líder: <strong>Marketplace</strong></li><li>UF líder: <strong>RJ</strong></li><li>Avaliação média: <strong>3.77/5</strong></li><li>Prazo médio: <strong>8.5 dias</strong></li></ul></div>
+
+<div class="card" style="margin-top:20px"><h2>🧰 Tecnologias</h2><p>Python • Pandas • NumPy • Matplotlib • Seaborn • Streamlit • SQLAlchemy • SQLite • Jupyter • GitHub • GitHub Pages</p></div>
+
+<div class="card" style="margin-top:20px"><h2>🚀 Funcionalidades</h2><ul><li>Filtros múltiplos e KPIs dinâmicos</li><li>Análise temporal</li><li>Comparações por região, UF, canal, categoria e produto</li><li>Correlação estatística</li><li>Persistência e modelagem relacional com SQLite/SQLAlchemy</li><li>Download dos dados filtrados</li><li>Dashboard organizado em seções</li></ul></div>
+
+<div class="card" style="margin-top:20px"><h2>📚 Metodologia</h2><p>O projeto segue o fluxo de leitura → limpeza → preparação → engenharia de atributos → análise exploratória → KPIs → visualização → interpretação → conclusão. O notebook documenta o processo e o Streamlit disponibiliza a análise de forma interativa.</p></div>
+<footer>Projeto acadêmico — G1 | Análise e Visualização de Dados com Python</footer>
+</div></body></html>
