@@ -885,10 +885,6 @@ st.subheader(
 )
 
 st.write(
-     "Python + Pandas + NumPy + Matplotlib +
-        "Seaborn + Streamlit + SQLAlchemy + SQLite"
-)
-
-,
-    unsafe_allow_html=True
+    "Python + Pandas + NumPy + Matplotlib + Seaborn + "
+    "Streamlit + SQLAlchemy + SQLite"
 )
