@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -59,6 +60,24 @@
             color: #9db0c5;
         }
 
+        .academic-info {
+            margin: 30px auto 0;
+            padding: 18px 22px;
+            max-width: 650px;
+            background: rgba(14, 28, 45, 0.75);
+            border: 1px solid #20364d;
+            border-radius: 16px;
+            color: #cbd8e6;
+        }
+
+        .academic-info p {
+            margin: 5px 0;
+        }
+
+        .academic-info strong {
+            color: #67d5ff;
+        }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(
@@ -111,7 +130,18 @@
         footer {
             text-align: center;
             color: #8295aa;
-            padding: 40px;
+            padding: 40px 20px;
+        }
+
+        .footer-academic {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #20364d;
+            font-size: 0.95rem;
+        }
+
+        .footer-academic strong {
+            color: #a9c0d6;
         }
 
         @media (max-width: 600px) {
@@ -127,6 +157,10 @@
 
             .card {
                 padding: 20px;
+            }
+
+            .academic-info {
+                padding: 15px;
             }
         }
     </style>
@@ -155,6 +189,31 @@
             Análise de vendas, rentabilidade e experiência
             do cliente entre 2015 e 2024.
         </p>
+
+
+        <!-- ================================================= -->
+        <!-- IDENTIFICAÇÃO ACADÊMICA -->
+        <!-- ================================================= -->
+
+        <div class="academic-info">
+
+            <p>
+                <strong>Disciplina:</strong>
+                Linguagens de Programação
+            </p>
+
+            <p>
+                <strong>Professor:</strong>
+                Alexandre Neves Louzada
+            </p>
+
+            <p>
+                <strong>Aluno:</strong>
+                Felipe Barbosa da Silva
+            </p>
+
+        </div>
+
 
         <div class="buttons">
 
@@ -497,6 +556,7 @@
         <div class="buttons">
 
             <!-- DASHBOARD -->
+
             <a
                 href="https://projeto-ecommerce-caidfmjgfwf9fsjevapnvv.streamlit.app/"
                 target="_blank"
@@ -507,6 +567,7 @@
 
 
             <!-- GITHUB -->
+
             <a
                 href="https://github.com/felipebarbosa-ai/projeto-ecommerce"
                 target="_blank"
@@ -529,6 +590,21 @@
         Projeto acadêmico — G1 |
         Análise e Visualização de Dados com Python
 
+        <div class="footer-academic">
+
+            <strong>Disciplina:</strong>
+            Linguagens de Programação
+            &nbsp;•&nbsp;
+
+            <strong>Professor:</strong>
+            Alexandre Neves Louzada
+            &nbsp;•&nbsp;
+
+            <strong>Aluno:</strong>
+            Felipe Barbosa da Silva
+
+        </div>
+
     </footer>
 
 </div>
@@ -536,3 +612,4 @@
 </body>
 
 </html>
+```
