@@ -880,18 +880,15 @@ st.write(
 
 st.divider()
 
-st.markdown(
-    """
-    <div style="
-        text-align: center;
-        color: #8295aa;
-        padding: 15px;
-    ">
+st.subheader(
+    "🎯 Material Utilizado"
+)
 
-        Python + Pandas + NumPy + Matplotlib +
-        Seaborn + Streamlit + SQLAlchemy + SQLite
+st.write(
+     "Python + Pandas + NumPy + Matplotlib +
+        "Seaborn + Streamlit + SQLAlchemy + SQLite"
+)
 
-    </div>
-    """,
+,
     unsafe_allow_html=True
 )
