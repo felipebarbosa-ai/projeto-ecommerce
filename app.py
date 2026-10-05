@@ -888,24 +888,6 @@ st.markdown(
         padding: 15px;
     ">
 
-        <strong>Projeto acadêmico — G1</strong>
-        <br>
-
-        Vendas em E-commerce no Brasil
-        <br><br>
-
-        <strong>Disciplina:</strong>
-        Linguagens de Programação
-        <br>
-
-        <strong>Professor:</strong>
-        Alexandre Neves Louzada
-        <br>
-
-        <strong>Aluno:</strong>
-        Felipe Barbosa da Silva
-        <br><br>
-
         Python + Pandas + NumPy + Matplotlib +
         Seaborn + Streamlit + SQLAlchemy + SQLite
 
